@@ -92,3 +92,10 @@ src/
 ├── App.jsx
 └── main.jsx
 ```
+
+📄 Licença
+MIT — livre para uso pessoal e educacional.
+
+🙋‍♂️ Autor
+Fernando Sabino
+https://www.linkedin.com/in/nandosabino/ | https://github.com/nandosabino
