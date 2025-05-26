@@ -52,3 +52,43 @@ Desenvolvido como desafio técnico fullstack.
 ```bash
 git clone https://github.com/seu-usuario/face-monitor.git
 cd face-monitor
+
+```
+
+2. Instale as dependências:
+
+```bash
+npm install
+```
+
+3. Crie um arquivo ```.env.local``` e adicione as chaves do Firebase:
+
+```env
+VITE_FIREBASE_API_KEY=...
+VITE_FIREBASE_AUTH_DOMAIN=...
+VITE_FIREBASE_PROJECT_ID=...
+VITE_FIREBASE_STORAGE_BUCKET=...
+VITE_FIREBASE_MESSAGING_SENDER_ID=...
+VITE_FIREBASE_APP_ID=...
+```
+
+4. Rode o projeto:
+
+```bash
+npm run dev
+```
+
+🔧 Estrutura do projeto
+
+```css
+src/
+├── components/
+│   ├── LiveVideoCard.jsx
+│   ├── Dashboard.jsx
+├── hooks/
+│   └── useDashboardData.js
+├── lib/
+│   └── firebase.js
+├── App.jsx
+└── main.jsx
+```
