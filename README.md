@@ -1,12 +1,54 @@
-# React + Vite
+# 🎯 Face Monitor - Reconhecimento Facial em Tempo Real
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Aplicação web que realiza **detecção facial em tempo real** usando a webcam do usuário, exibe métricas analíticas em um dashboard e registra dados no Firebase Firestore.  
+Desenvolvido como desafio técnico fullstack.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Demonstração
 
-## Expanding the ESLint configuration
+🖼️ [Visualizar mock (v0.dev)](https://v0-real-time-facial-monitoring-1us0ws26d.vercel.app)  
+📺 [Deploy final (Vercel)](https://face-monitor.vercel.app)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🧠 Funcionalidades
+
+- 📹 Captura de vídeo em tempo real da webcam
+- 🧠 Detecção facial com `@vladmandic/face-api`
+- 🟢 Identificação de:
+  - Idade estimada
+  - Gênero
+  - Expressão facial
+  - **Distância estimada** até a câmera
+- 🧾 Armazenamento dos dados em tempo real no Firebase Firestore
+- 📊 Dashboard com:
+  - Total de pessoas detectadas
+  - Tempo médio de permanência
+  - Pico de fluxo por hora
+  - Expressão mais comum
+  - Gráfico por hora com `recharts`
+- 🔁 Evita contagem duplicada com `faceDescriptor + timeout`
+- 🎨 Interface moderna com Tailwind CSS
+- 🔒 Controle de detecção única por pessoa
+
+---
+
+## ⚙️ Tecnologias utilizadas
+
+- React + Vite
+- Tailwind CSS
+- Firebase (Firestore)
+- @vladmandic/face-api (detecção facial)
+- Recharts (gráficos)
+- date-fns (manipulação de datas)
+
+---
+
+## 📦 Instalação local
+
+1. Clone o repositório:
+
+```bash
+git clone https://github.com/seu-usuario/face-monitor.git
+cd face-monitor
