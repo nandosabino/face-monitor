@@ -11,10 +11,13 @@
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
-    "face-api.js": "^0.20.0",
+    "@tensorflow/tfjs": "^4.22.0",
+    "@vladmandic/face-api": "^1.7.15",
+    "date-fns": "^4.1.0",
     "firebase": "^11.8.1",
     "react": "^19.1.0",
-    "react-dom": "^19.1.0"
+    "react-dom": "^19.1.0",
+    "recharts": "^2.15.3"
   },
   "devDependencies": {
     "@eslint/js": "^9.25.0",
